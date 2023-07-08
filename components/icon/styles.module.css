@@ -1,0 +1,18 @@
+.container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  place-content: center;
+  overflow: hidden;
+  background: rgba(224, 195, 252, 0.2);
+  border-radius: 15px;
+}
+
+.item {
+  overflow: visible;
+  stroke: #8EC5FC;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: auto;
+}
