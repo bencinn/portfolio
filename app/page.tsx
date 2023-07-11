@@ -5,6 +5,8 @@ import Gridl from "@/components/iwc";
 import BigIcon from "@/components/bigicon";
 import {motion} from "framer-motion";
 
+import {Fragment} from "react";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 lg:p-10">
@@ -24,12 +26,12 @@ export default function Home() {
 
 <div className="grid grid-cols-4 grid-rows-3 gap-4 items-center">
   {[["Github", "Hansnnn (@Bencinn)", "https://github.com/bencinn"], ["E-Mail", "iloveheapsort@gmail.com", "mailto:iloveheapsort@gmail.com"]].map((object, _) =>
-    <><div>{object[0]}</div>
-    <a className="p-3 bg-slate-300 bg-opacity-30 rounded-full flex items-center gap-6 h-15 col-span-3" href={object[2]} target="__blank">
+    <Fragment key={object[0]}>
+      <div>{object[0]}</div>
+          <motion.a className="p-3 bg-slate-300 bg-opacity-30 rounded-full flex items-center gap-6 h-15 col-span-3" href={object[2]} target="__blank" whileHover={{ scale: 1.05 }}>
       {object[1]}
-    </a>
-
-    </>
+    </motion.a>
+    </Fragment>
   )}
     </div>
 
