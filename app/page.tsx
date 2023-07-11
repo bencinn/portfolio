@@ -23,7 +23,7 @@ export default function Home() {
                 <span className="font-bold text-4xl">Contact</span>
 
 <div className="grid grid-cols-4 grid-rows-3 gap-4 items-center">
-  {[["Github", "Hansnnn (@Bencinn)", "https://github.com/hansnnn"], ["E-Mail", "iloveheapsort@gmail.com", "mailto:iloveheapsort@gmail.com"]].map((object, _) =>
+  {[["Github", "Hansnnn (@Bencinn)", "https://github.com/bencinn"], ["E-Mail", "iloveheapsort@gmail.com", "mailto:iloveheapsort@gmail.com"]].map((object, _) =>
     <><div>{object[0]}</div>
     <a className="p-3 bg-slate-300 bg-opacity-30 rounded-full flex items-center gap-6 h-15 col-span-3" href={object[2]} target="__blank">
       {object[1]}
