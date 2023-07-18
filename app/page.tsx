@@ -13,13 +13,13 @@ export default function Home() {
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm">
         <Navbar />
       </div>
-      <div className="flex items-center flex-col m-10 gap-36">
+      <div className="flex items-center flex-col m-6 gap-36">
               <BigIcon />
-              <div className="flex items-center flex-col m-5 gap-2">
+              <div className="flex items-center flex-col m-3 gap-2">
                 <span className="font-bold text-4xl">My projects</span>
-                <Gridl title="Teolang" description="A programming language written in Rust" imagesrc="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"/>
-                <Gridl title="School Parking Project" description="(Contributed) The project that manages the parking spaces in schools written in Svelte + Supabase" imagesrc="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"/>
-                <Gridl title="Node-Server" description="(My first project!) A template for Node.js server" imagesrc="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"/>
+                <Gridl title="Teolang" description="A programming language written in Rust" imagesrc="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" url="https://github.com/bencinn/teo"/>
+                <Gridl title="School Parking Project" description="(Contributed) The project that manages the parking spaces in schools written in Svelte + Supabase" imagesrc="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" url="https://github.com/ItsPungpond98/School-Parking-Project"/>
+                <Gridl title="Node-Server" description="(My first project!) A template for Node.js server" imagesrc="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" url="https://bencinn/Node-Server"/>
               </div>
               <div className="flex items-center flex-col m-5 gap-5">
                 <span className="font-bold text-4xl">Contact</span>
