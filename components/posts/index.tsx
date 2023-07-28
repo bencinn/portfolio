@@ -10,7 +10,7 @@ export default async function Posts({ queries = "" }: { queries: string }) {
   const posts = await client.fetch.bind(client)<SanityDocument>(queries);
   return (
     <main className="container mx-auto grid grid-cols-1 divide-y divide-blue-100">
-      {posts.map((post) => {
+      {posts.map((post: any) => {
         console.log(post);
         return (
           <Link

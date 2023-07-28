@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion";
-import { Fragment } from "react";
+import { Fragment, ImgHTMLAttributes } from "react";
 export interface ComponentProps {
 }
 
