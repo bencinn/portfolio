@@ -11,7 +11,6 @@ export default async function Posts({ queries = "" }: { queries: string }) {
   return (
     <main className="container mx-auto grid grid-cols-1 divide-y divide-blue-100">
       {posts.map((post: any) => {
-        console.log(post);
         return (
           <Link
             key={post._id}
