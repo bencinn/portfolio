@@ -10,15 +10,18 @@ export default function Post({ post }: { post: SanityDocument }) {
   return (
     <main className="container mx-auto prose prose-lg p-4">
       <h1>{post.title}</h1>
-      {post?.mainImage ? (
-        <Image
-          className="float-left m-0 w-1/3 mr-4 rounded-lg w-auto"
-          src={builder.image(post.mainImage).width(1920).height(300).url()}
-          width={1920}
-          height={300}
-          alt={post?.mainImage?.alt}
-        />
-      ) : null}
+      <div>
+        {post?.mainImage ? (
+          <Image
+            className="float-left m-0 w-1/3 mr-4 rounded-lg w-auto"
+            src={builder.image(post.mainImage).width(1920).height(300).url()}
+            width={1920}
+            height={300}
+            alt={post?.mainImage?.alt}
+          />
+        ) : null}
+        <span className="text-gray-500">({post?.mainImage?.alt})</span>
+      </div>
       {post?.body ? <PortableText value={post.body} /> : null}
     </main>
   );
