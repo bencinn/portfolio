@@ -12,7 +12,7 @@ export default function Post({ post }: { post: SanityDocument }) {
   return (
     <main className="container mx-auto prose prose-lg p-4">
       <h1>{post.title}</h1>
-      <div>
+      <div className="flex flex-col">
         {post?.mainImage ? (
           <Image
             className="float-left m-0 w-1/3 mr-4 rounded-lg w-auto"
