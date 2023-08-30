@@ -1,7 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps, Variants } from "framer-motion";
 import styles from "./styles.module.css";
+import { WavyText } from "../heart";
 
 const icon = {
   hidden: {
@@ -52,8 +53,12 @@ export default function BigIcon() {
           </pattern>
         </defs>
       </motion.svg>
-      <span className="font-bold text-6xl">I&apos;m BenCinn</span>
-      <span className="font-medium text-2xl">A front-end/full stack programmer</span>
+      <span className="font-bold text-6xl">
+        I&apos;m <WavyText text="BenCinn" />
+      </span>
+      <span className="font-medium text-2xl">
+        A front-end/full stack programmer
+      </span>
     </div>
   );
 }

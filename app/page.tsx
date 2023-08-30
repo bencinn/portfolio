@@ -12,17 +12,16 @@ export default function Home() {
   return (
     <>
       <BigIcon />
-      <div className="flex items-center flex-col m-5 gap-2">
-        <div>
-          <span>My blog</span>
+      <div className="flex items-center flex-col m-5 gap-4">
+        <div className="flex items-center flex-col m-3 gap-2">
+          <span className="sm:text-2xl lg:text-4xl font-bold">My blog</span>
           <Posts queries={postsQuery} />
         </div>
-        <span className="font-bold text-4xl">My projects</span>
         <div className="flex items-center flex-col m-3 gap-2">
-          <span className="font-bold text-4xl">My projects</span>
-          <Gridl title="Teolang" description="A programming language written in Rust" imagesrc="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" url="https://github.com/bencinn/teo" />
-          <Gridl title="School Parking Project" description="(Contributed) The project that manages the parking spaces in schools written in Svelte + Supabase" imagesrc="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" url="https://github.com/ItsPungpond98/School-Parking-Project" />
-          <Gridl title="Node-Server" description="(My first project!) A template for Node.js server" imagesrc="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" url="https://bencinn/Node-Server" />
+          <span className="font-bold sm:text-xl md:text-4xl lg:text-6xl">My projects</span>
+          <Gridl title="Teolang" description="A programming language written in Rust. It was designed mainly for kids and teachers for its simplicity." imagesrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIQIVEBgprClGHZpi_O4LGK_ArSq4XBwkzYaNn557&s" url="https://github.com/bencinn/teo" />
+          <Gridl title="School Parking Project" description="(Contributed / Co-authored) The project that manages the parking spaces in schools written in Svelte + Supabase" imagesrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIQIVEBgprClGHZpi_O4LGK_ArSq4XBwkzYaNn557&s" url="https://github.com/ItsPungpond98/School-Parking-Project" />
+          <Gridl title="Node-Server" description="(My first project!) A template for Node.js server with Tailwind CSS support." imagesrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIQIVEBgprClGHZpi_O4LGK_ArSq4XBwkzYaNn557&s" url="https://bencinn/Node-Server" />
         </div>
         <div className="flex items-center flex-col m-5 gap-5">
           <span className="font-bold text-4xl">Contact</span>

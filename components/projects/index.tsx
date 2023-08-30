@@ -1,24 +1,17 @@
-"use client"
+"use client";
 
 import { motion } from "framer-motion";
 import { Fragment, ImgHTMLAttributes } from "react";
-export interface ComponentProps {
-}
+export interface ComponentProps {}
 
-const Projects: React.FC<React.PropsWithChildren<ImgHTMLAttributes<HTMLImageElement> & ComponentProps>> = ({
-  src,
-  className,
-  ...props
-}) => {
+const Projects: React.FC<
+  React.PropsWithChildren<ImgHTMLAttributes<HTMLImageElement> & ComponentProps>
+> = ({ src, className, ...props }) => {
   return (
     <div className="grid grid-cols-4 grid-rows-3 gap-4 items-center">
       {[
         ["Github", "Hansnnn (@Bencinn)", "https://github.com/bencinn"],
-        [
-          "E-Mail",
-          "iloveheapsort@gmail.com",
-          "mailto:iloveheapsort@gmail.com",
-        ],
+        ["E-Mail", "iloveheapsort@gmail.com", "mailto:iloveheapsort@gmail.com"],
       ].map((object, _) => (
         <Fragment key={object[0]}>
           <div>{object[0]}</div>
@@ -33,6 +26,6 @@ const Projects: React.FC<React.PropsWithChildren<ImgHTMLAttributes<HTMLImageElem
         </Fragment>
       ))}
     </div>
-  )
+  );
 };
 export default Projects;
