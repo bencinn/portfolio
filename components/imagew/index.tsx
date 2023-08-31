@@ -20,7 +20,7 @@ const Gallery: React.FC<
         className,
       )}
     >
-      <motion.img src={src} className="rounded-lg" />
+      <motion.img src={src} className="rounded-lg" width={300} />
       {
         // <motion.img src={src} className="rounded-lg w-full h-full fixed group-hover:relative object-cover" />
         // <motion.a className="" href={url} target="_blank">Visit URL</motion.a>
