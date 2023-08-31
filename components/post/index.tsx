@@ -10,9 +10,9 @@ const builder = imageUrlBuilder(client);
 
 export default function Post({ post }: { post: SanityDocument }) {
   return (
-    <main className="container mx-auto prose prose-lg p-4">
+    <main className="container mx-auto prose prose-lg p-4 flex gap-5 flex-col">
       <h1 className="text-3xl">{post.title}</h1>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-10">
         {post?.mainImage ? (
           <Image
             className="float-left m-0 mr-4 rounded-lg w-auto"
